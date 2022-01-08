@@ -10,7 +10,35 @@
 
 ## Quick start
 1. Clone this project
-```bash
-pip3 install -r requirements.txt
-pytest
+2. Install pytest
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+3. Test
+    ```bash
+   pytest
+    ```
+   or
+   ```bash
+    pytest test_p1.py
+   ```
+
+## Solution Customizing
+```python
+# test_p1.py
+from io_test_function import io_test_function
+from p1 import solution
+
+
+def test_p1_1():
+    """ 인풋값 설명
+    '6\n3'
+    p1.py의 solution에서 input 함수가 2번 호출 됩니다.
+    첫번째 인풋으로 6이, 다음 인풋으로 3이 들어갑니다.
+
+    ex:
+    n, m = input(), input()  # n='6', m='3'
+ 
+    """
+    io_test_function(solution, '6\n3', '666')
 ```
