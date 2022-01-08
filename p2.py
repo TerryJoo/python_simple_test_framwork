@@ -1,2 +1,3 @@
 def solution():
-    print('\n'.join([input(), input(), input()]))
+    print(input() * int(input()))
+
