@@ -23,7 +23,7 @@
     pytest test_p1.py
    ```
 
-## Solution Customizing
+## Custom solution & I/O
 ```python
 # test_p1.py
 from io_test_function import io_test_function
@@ -31,14 +31,18 @@ from p1 import solution
 
 
 def test_p1_1():
-    """ 인풋값 설명
-    '6\n3'
-    p1.py의 solution에서 input 함수가 2번 호출 됩니다.
-    첫번째 인풋으로 6이, 다음 인풋으로 3이 들어갑니다.
+    """ 설명
+    solution:
+    작성된 함수(p1.py)
 
-    ex:
+    INPUT - '6\n3':
+    solution안의 input함수가 호출될 때 마다 입력할 값을 줄바꿈 문자(\n)로 구분하여 순서대로 작성합니다. 
+    첫번째 인풋으로 6이, 다음 인풋으로 3이 들어갑니다.
+    # ex
     n, m = input(), input()  # n='6', m='3'
  
+    OUTPUT - '666':
+    solution안의 print함수에 의해 출력되는 결과를 수신하여, '666'이 맞는지 확인합니다.
     """
     io_test_function(solution, '6\n3', '666')
 ```
