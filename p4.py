@@ -1,5 +1,2 @@
 def solution():
-    p = input()
-    return p
-    # print(p)
-
+    print('\n'.join([input(), input(), input()]))
