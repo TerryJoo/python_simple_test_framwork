@@ -26,7 +26,7 @@
 ## Custom solution & I/O
 ```python
 # test_p1.py
-from io_test_function import io_test_function
+from io_test_function import io_test
 from p1 import solution
 
 
@@ -44,5 +44,5 @@ def test_p1_1():
     OUTPUT - '666':
     solution안의 print함수에 의해 출력되는 결과를 수신하여, '666'이 맞는지 확인합니다.
     """
-    io_test_function(solution, '6\n3', '666')
+    io_test(solution, '6\n3', '666')
 ```

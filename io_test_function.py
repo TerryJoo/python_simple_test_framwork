@@ -3,7 +3,7 @@ import io
 from contextlib import redirect_stdout
 
 
-def io_test_function(solution, input_data, output):
+def io_test(solution, input_data, output):
     def inputs(lines):
         for line in lines.split('\n'):
             yield line
